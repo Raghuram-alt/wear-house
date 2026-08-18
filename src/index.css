@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #060913;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom Sleek Control Room Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060913;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Custom Glassmorphism Panels */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+.glass-panel-cyan {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+}
+
+/* Glow Shadows */
+.shadow-cyan-glow {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+}
+
+.shadow-rose-glow {
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.3);
+}
+
+.shadow-amber-glow {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+}
+
+.shadow-emerald-glow {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
+}
